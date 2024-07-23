@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main {
+  margin: auto;
+  width: 70%;
+  height: auto;
+  background-color: aquamarine; /*geçici*/
+}
+
+.header {
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+  font-size: 35px;
+  background-color: blanchedalmond;/*geçici*/
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 10px;
+    column-gap: 5vh;
+    row-gap: 5vh;
+    justify-content: space-evenly;
+  }
+  .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(20, 82, 181, 0.614);
+      border-radius: 15px;
+      border-width: .5px 1px 9px 1px;
+      border-style: solid;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+
+      border-top: .5px solid rgba(20, 82, 181, 0.350);
+      border-left: 2px solid rgba(20, 82, 181, 0.350);
+      border-right: 2px solid rgba(20, 82, 181, 0.350);
+      
+    }
+    .baslik {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+
+    }
+
+    .description {
+      font-size: 15px;
+    }
+
+    .icons {
+      width: 25%;
+      padding: 1px;
+      position: relative;
+    }
+
+    b {
+      color: rgb(20, 82, 181);
+    }
+
+    /*responsive*/
+
+
+    @media only screen and (max-width: 1025px) {
+      
+      .main{
+        width: 100%;
+      }
+      .header {
+        padding: 25px;
+        font-size: 17px;
+      }
+
+      .grid-container {
+        padding: 5px;
+        column-gap: 2.5vh;
+        row-gap: 2.5vh;
+        grid-template-columns: 29% 29% 29%;
+      }
+      .grid-item {
+        padding: 10px;
+      font-size: 10px;
+      }
+      .baslik{
+        font-size: 9px;
+      }
+      .description {
+        font-size: 7px;
+      }
+      .icons {
+        width: 40%;
+        padding: 1px;
+        position: relative;
+      }
+        
+      
+    }
