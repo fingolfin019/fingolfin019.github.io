@@ -12,7 +12,7 @@
   margin: auto;
   width: 70%;
   height: auto;
-  background-color: aquamarine; /*geçici*/
+  
 }
 
 .header {
@@ -20,7 +20,7 @@
   margin: auto;
   padding: 50px;
   font-size: 35px;
-  background-color: blanchedalmond;/*geçici*/
+  
 }
 
 .grid-container {
